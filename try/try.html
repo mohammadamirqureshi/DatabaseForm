@@ -6,10 +6,58 @@
 </head>
 <body>
 
-<input type="text" id="inp1">
-<input type="text" id="inp2">
+<input type="text" id="name1">
+<input type="text" id="name2">
+<label>Date of birth : </label><input type="date" name="dob">
+<label>Gender  : </label><label>Male</label><input type="radio" name="gender" value="male">
+<label>Female</label><input type="radio" name="gender" value="female">
+<label>Not to say</label><input type="radio" name="gender" value="nottosay">
+<select id="education">
+    <option value="Select">Select</option>
+    <option value="Tenth">10<superscript>th</superscript></option>
+    <option value="Twelveth">12<superscript>th</superscript></option>
+    <option value="Graduation">Graduation</option>
+</select>
+<input type="hidden" id="inpGraduation" list="educationGraduation" placeholder="Education">
+<datalist id="educationGraduation">
+    <option value="Select">Select</option>
+    <option value="Engineering">(B.tech)</option>
+    <option value="BA(hons)">BA(hons)</option>
+    <option value="BA.LLB">BA.LLb</option>
+    <option value="MBBS">MBBS</option>
+</datalist>
+<input type="hidden" id="edu01" placeholder="school">
+<input type="hidden" id="edu02" placeholder="year">
+<input type="hidden" id="edu03" placeholder="percentage">
+<input type="hidden" id="edu11" placeholder="school">
+<input type="hidden" id="edu12" placeholder="year">
+<input type="hidden" id="edu13" placeholder="percentage">
+<input type="hidden" id="edu21" placeholder="branch">
+<input type="hidden" id="edu22" placeholder="year">
+<input type="hidden" id="edu23" placeholder="college">
 
-<button id="btn">Add</button>
+<button id="btnEducation1" type="button">Add Qualification</button>
+<button id="btnEducation2" type="button">Add Qualification</button>
+<button id="btnEducation3" type="button">Add Qualification</button>
+<div id="showEducation">
+    Qualifications :
+    <ul id="showEducationList"></ul>
+</div>
+<select id="profiles">
+    <option value="Select">Select</option>
+    <option value="Google">Google</option>
+    <option value="Linkedin">Linkedin</option>
+    <option value="Twitter">Twitter</option>
+    <option value="Facebook">Facebook</option>
+    <option value="Github">Github</option>
+</select>
+<input type="hidden" id="profiles1" placeholder="Username">
+<input type="hidden" id="profiles2" placeholder="Profile Link">
+<button id="btnProfiles" type="button">Add Profile</button>
+<div id="showProfiles">
+    Profiles :
+<ul id="showProfilesList"></ul>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <!--<script src="jquery-ui-1.10.0/ui/jquery-ui.js"></script>-->
